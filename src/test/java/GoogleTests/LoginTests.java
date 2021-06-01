@@ -1,5 +1,8 @@
-package LoginTests;
+package GoogleTests;
 
+import libs.WebElements;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -17,26 +20,21 @@ public class LoginTests {
 
     public WebDriver webDriver;
 
+    public WebElements webElements;
+
     @Test
     public void testLoginWithValidData() throws InterruptedException {
-        File fileChromeDriver = new File("drivers/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", fileChromeDriver.getAbsolutePath());
 
-        webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
-
-        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-        webDriver.get("https://google.com");
 
         System.out.println(webDriver.getCurrentUrl());
         System.out.println(webDriver.getTitle());
 
-        webDriver.findElement(By.xpath("//div[@class='gb_Te']//a[@class='gb_D']")).click();
+
+//        webDriver.findElement(By.xpath("//div[@class='gb_Te']//a[@class='gb_D']")).click();
 
         Thread.sleep(1000);
-        webDriver.findElement(By.xpath("//div[@class='gb_Te']//a[@class='gb_D']")).click();
-        Thread.sleep(100);
+//        webDriver.findElement(By.xpath("//div[@class='gb_Te']//a[@class='gb_D']")).click();
+        Thread.sleep(100000000);
 
 
 
@@ -50,7 +48,25 @@ public class LoginTests {
         System.out.println(webDriver.getCurrentUrl());
         System.out.println(webDriver.getTitle());
 
+    }
+
+    @Before
+    public void beforeTest(){
+        File fileChromeDriver = new File("drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", fileChromeDriver.getAbsolutePath());
+
+        webDriver = new ChromeDriver();
+        webDriver.manage().window().maximize();
+
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        webDriver.get("https://google.com");
+
+    }
+
+    @After
+    public void afterTest(){
         webDriver.quit();
     }
+
 
 }

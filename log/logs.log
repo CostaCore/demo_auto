@@ -18,3 +18,16 @@
 2021-30-05 12:47:27   INFO [RegistrationTests:207 ] : fill phone_mobile inputForm
 2021-30-05 12:47:27   INFO [RegistrationTests:216 ] : fill alias inputForm
 2021-30-05 12:47:29   INFO [RegistrationTests:224 ] : Click submit button
+2021-01-06 17:54:19   INFO [GoogleMainPage:74  ] : click googleApps Button
+2021-01-06 17:54:20  ERROR [GoogleMainPage:85  ] : Can`t click search Button
+2021-01-06 17:55:17   INFO [GoogleMainPage:76  ] : click googleApps Button
+2021-01-06 18:05:23   INFO [GoogleMainPage:76  ] : click googleApps Button
+2021-01-06 18:21:51   INFO [GoogleMainPage:76  ] : click googleApps Button
+2021-01-06 18:22:38   INFO [GoogleMainPage:76  ] : click googleApps Button
+2021-01-06 18:23:54   INFO [GoogleMainPage:76  ] : click googleApps Button
+2021-01-06 18:29:39   INFO [GoogleMainPage:76  ] : click googleApps Button
+2021-01-06 18:30:41   INFO [GoogleMainPage:76  ] : click googleApps Button
+2021-01-06 18:37:37   INFO [GoogleMainPage:78  ] : click googleApps Button
+2021-01-06 18:41:26   INFO [GoogleMainPage:84  ] : click googleApps Button
+2021-01-06 18:42:55   INFO [GoogleMainPage:84  ] : click googleApps Button
+2021-01-06 18:50:02   INFO [GoogleMainPage:84  ] : click googleApps Button
